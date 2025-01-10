@@ -1592,3 +1592,40 @@ section
 {
 	color: #FFFFFF;
 }
+
+
+/* Footer Section Styling */
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 18px;
+	z-index: 1000; /* Keeps it above other elements */
+}
+
+/* Marquee Effect */
+.marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.marquee p {
+	display: inline-block;
+	animation: scroll-left 30s linear infinite;
+	padding-right: 100%; /* Space between the text and the end of the container */
+}
+
+/* Animation to make text move from right to left */
+@keyframes scroll-left {
+from {
+	transform: translateX(100%);
+}
+to {
+	transform: translateX(-100%);
+}
+}
